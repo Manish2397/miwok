@@ -3,10 +3,12 @@ package com.example.android.miwok;
 public class NumberWordsClass {
     private String defaultTranslation,miwokTranslation;
     private int imageResourceId;
-    NumberWordsClass(String d,String m,int imageResourceId){
+    private int musicResourceId;
+    NumberWordsClass(String d,String m,int imageResourceId,int musicResourceId){
         defaultTranslation = d;
         miwokTranslation = m;
         this.imageResourceId=imageResourceId;
+        this.musicResourceId=musicResourceId;
 
     }
     public String getDefaultTranslation(){
@@ -20,6 +22,10 @@ public class NumberWordsClass {
         return imageResourceId;
     }
 
+    public int getMusicResourceId() {
+        return musicResourceId;
+    }
+
     public void setDefaultTranslation(String defaultTranslation) {
         this.defaultTranslation = defaultTranslation;
     }
@@ -30,5 +36,9 @@ public class NumberWordsClass {
 
     public void setImageResourceId(int imageResourceId) {
         this.imageResourceId = imageResourceId;
+    }
+
+    public void setMusicResourceId(int musicResourceId) {
+        this.musicResourceId = musicResourceId;
     }
 }

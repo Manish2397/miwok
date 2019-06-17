@@ -3,11 +3,12 @@ package com.example.android.miwok;
 public class ColorName
 {
     private String defaultColorTranslation,miwokColorTranslation;
-    private int imageResoureId;
-    public ColorName(String defaultColorTranslation,String miwokColorTranslation,int imageResoureId){
+    private int imageResoureId,musicResourceId;
+    public ColorName(String defaultColorTranslation,String miwokColorTranslation,int imageResoureId,int musicResourceId){
         this.defaultColorTranslation=defaultColorTranslation;
         this.miwokColorTranslation = miwokColorTranslation;
         this.imageResoureId = imageResoureId;
+        this.musicResourceId=musicResourceId;
     }
 
     public void setDefaultColorTranslation(String defaultColorTranslation) {
@@ -22,6 +23,10 @@ public class ColorName
         this.imageResoureId = imageResoureId;
     }
 
+    public void setMusicResourceId(int musicResourceId) {
+        this.musicResourceId = musicResourceId;
+    }
+
     public String getDefaultColorTranslation() {
         return defaultColorTranslation;
     }
@@ -32,5 +37,9 @@ public class ColorName
 
     public int getImageResoureId() {
         return imageResoureId;
+    }
+
+    public int getMusicResourceId() {
+        return musicResourceId;
     }
 }
